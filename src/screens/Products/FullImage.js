@@ -3,14 +3,13 @@ import { View, Text, Button, StyleSheet, SectionList, FlatList, Image, StatusBar
 import res from '../../Helper/index';
 import HeaderImageScrollView, { TriggeringView } from 'react-native-image-header-scroll-view';
 import ApiHelper from '../../Helper/ApiHelper/ApiHelper';
-import { PageControlAji } from 'react-native-chi-page-control';
 import RNPickerSelect from 'react-native-picker-select';
 import DeviceInfo from 'react-native-device-info';
 import Modal from 'react-native-modal';
 import { globalVariables } from '../../Helper/Constant';
 import Icon from 'react-native-vector-icons/FontAwesome';
 import Toast from 'react-native-simple-toast';
-import { Pages } from 'react-native-pages';
+// import { Pages } from 'react-native-pages';
 
 const widthScreen = Dimensions.get('window').width;
 
@@ -30,7 +29,7 @@ export default class FullImage extends React.Component {
               />
             </TouchableOpacity>
         
-        {globalVariables.keyAppLanguageGlobal==='en' ? <Pages indicatorColor={res.color.blackColor} height={250}  horizontal={true}>
+        {/* {globalVariables.keyAppLanguageGlobal==='en' ? <Pages indicatorColor={res.color.blackColor} height={250}  horizontal={true}>
         {this.props.route.params.productImg.map((obj, index) => {
             return (
               <View  style = {{width:'100%',height:'100%'}}>
@@ -57,7 +56,7 @@ export default class FullImage extends React.Component {
             );
         })} 
         
-        </Pages> }
+        </Pages> } */}
         
         
         </View>

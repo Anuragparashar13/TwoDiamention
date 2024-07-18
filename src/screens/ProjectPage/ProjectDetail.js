@@ -7,9 +7,10 @@ import res from '../../Helper/index'
 import ApiHelper from '../../Helper/ApiHelper/ApiHelper';
 import Font from '../../res/Font/Font';
 import HeaderImageScrollView, { TriggeringView } from 'react-native-image-header-scroll-view';
-import {PageControlAji} from 'react-native-chi-page-control';
+// import {PageControlAji} from 'react-native-chi-page-control';
 import { ScrollView } from 'react-native-gesture-handler';
-import { Thumbnail } from 'react-native-thumbnail-video';
+// import { Thumbnail } from 'react-native-thumbnail-video';
+import { Thumbnail } from 'react-native-thumbnail-video-next'
 import globalVariables from '../../Helper/Constant'
 
 const widthScreen = Dimensions.get('window').width;
@@ -124,12 +125,12 @@ export default class ProjectDetail extends Component {
             resizeMode='contain'
             style={{width:'100%',height:'100%',justifyContent:'space-between',alignSelf:'stretch'}}>
             <View style={{alignItems: 'center',justifyContent:'center'}}>
-            <PageControlAji
+            {/* <PageControlAji
             progress={this.state.progress}
             
             numberOfPages={this.state.ProjectImages.length}
             style={{marginTop: 60, width:'80%',alignItems:'center'}}
-            />
+            /> */}
             </View>
             <View style ={{marginBottom:20, justifyContent:'space-between',width:'100%',flexDirection:'row'}}>
               <TouchableOpacity style={[styles.closeButtonStyle,{marginLeft:20}] } onPress={() => {this.props.navigation.goBack()}}>

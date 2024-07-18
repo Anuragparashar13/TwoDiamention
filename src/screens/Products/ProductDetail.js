@@ -4,7 +4,7 @@ import { View, Text, Button, StyleSheet, SectionList, FlatList, Image, StatusBar
 import res from '../../Helper/index';
 import HeaderImageScrollView, { TriggeringView } from 'react-native-image-header-scroll-view';
 import ApiHelper from '../../Helper/ApiHelper/ApiHelper';
-import { PageControlAji } from 'react-native-chi-page-control';
+// import { PageControlAji } from 'react-native-chi-page-control';
 import RNPickerSelect from 'react-native-picker-select';
 import DeviceInfo from 'react-native-device-info';
 import Modal from 'react-native-modal';
@@ -293,12 +293,12 @@ export default class ProductDetail extends React.Component {
           style={{ width: '100%', height: '100%', justifyContent: 'space-between',}} resizeMode='contain' >
           <View style={{backgroundColor:'rgba(52, 52, 52, 0.1)', height:'100%',justifyContent: 'space-between',}}> 
           <View style={{ alignItems: 'center', justifyContent: 'center' }}>
-            <PageControlAji
+            {/* <PageControlAji
               progress={this.state.progress}
               numberOfPages={this.state.banners}
               style={{ marginTop: 60, width: '80%', alignItems: 'center' }}
               inactiveTintColor={res.color.midGrayColor}
-            />
+            /> */}
           </View>
           
           <View style={{ marginBottom: 40, justifyContent: 'space-between', width: '100%', flexDirection: 'row' }}>

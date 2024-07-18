@@ -7,7 +7,6 @@ import res from '../../Helper/index'
 import ApiHelper from '../../Helper/ApiHelper/ApiHelper';
 import Font from '../../res/Font/Font';
 import HeaderImageScrollView, { TriggeringView } from 'react-native-image-header-scroll-view';
-import {PageControlAji} from 'react-native-chi-page-control';
 import { ScrollView } from 'react-native-gesture-handler';
 import globalVariables from '../../Helper/Constant'
 

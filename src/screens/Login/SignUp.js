@@ -517,7 +517,7 @@ onAppleButtonPress = async () => {
              <Text style={{color: res.color.midGrayColor,marginLeft:'10%',marginRight:'10%',fontFamily:res.font.ragularFont}}>{res.strings.signUpwithApple}</Text>
              <View style={[styles.blackButtonViewCart,{marginTop:8}]}>
              <AppleButton
-                  buttonStyle={AppleButton.Style.BLACK}
+                  buttonStyle={AppleButton?.Style.BLACK}
                   buttonType={AppleButton.Type.SIGN_IN}
                   style={styles.blackButtonViewCart}
                   onPress={() => {this.onAppleButtonPress()}}

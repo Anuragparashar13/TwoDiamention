@@ -13,6 +13,7 @@ import {
   Dimensions,
   I18nManager,
   ScrollView,
+  Platform,
   BackHandler
 } from 'react-native';
 import {NavigationProp} from '@react-navigation/native';
@@ -21,15 +22,13 @@ import {ListItem, Avatar, SearchBar} from 'react-native-elements';
 import ImageAssets from '../Helper/ImageAssets';
 import RNRestart from 'react-native-restart';
 import AsyncStorage from '@react-native-async-storage/async-storage';
-import {PageControlAji} from 'react-native-chi-page-control';
 import {TouchableOpacity} from 'react-native-gesture-handler';
 import {globalVariables, asyncKeys} from '../Helper/Constant';
 import Icon from 'react-native-vector-icons/FontAwesome';
 import res from '../Helper/index';
 import ApiHelper from '../Helper/ApiHelper/ApiHelper';
 // import PageControl from 'react-native-page-control';
-import { Pages } from 'react-native-pages';
-import { Platform } from 'react-native';
+// import { Pages } from 'react-native-pages';
 
 //https://dev.to/shubhkirtisharma/building-serverless-or-debug-apk-for-react-native-apps-356m
 const windowWidth = Dimensions.get('window').width;
@@ -321,7 +320,7 @@ export default class HomeScreen extends React.Component {
 
         <ScrollView>
           <View>
-        <View>
+        {/* <View>
 
           {globalVariables.keyAppLanguageGlobal==='en' ? <Pages indicatorColor={res.color.blackColor} height={250}  horizontal={true}>
           {this.state.banner.map((obj, index) => {
@@ -353,7 +352,7 @@ export default class HomeScreen extends React.Component {
           </Pages> }
          
         
-        </View>
+        </View> */}
 
         <FlatList
           data={this.state.dataSource}
