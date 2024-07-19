@@ -69,6 +69,14 @@ export const AccountLogoutMenuCell = ({item, navigation}) => (
   </TouchableOpacity>
 );
 
+export const AccountDeleteMenuCell = ({item, onpress}) => (
+  <TouchableOpacity onPress={() => {onpress()}} >
+    <View style={{backgroundColor:'white'}}>
+      <Text style={styles.signOutTitle}>{item}</Text>
+    </View>
+  </TouchableOpacity>
+);
+
 export function navToLogin (item, navigation){
   if (globalVariables.userId != 0)
     {

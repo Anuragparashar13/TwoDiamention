@@ -166,4 +166,5 @@ export default {
     invalidFirstname: 'الرجاء إدخال الاسم الأول صالح',
     invalidLastname: 'الرجاء إدخال اسم عائلة صالح',
     requiredInfo: 'معلومات مطلوبة',
+    deleteAccount: 'حذف الحساب',
  }

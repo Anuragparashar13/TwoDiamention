@@ -160,5 +160,6 @@ export default {
    or: 'OR',
    doneText: 'Done',
    requiredInfo: 'Required Information',
+   deleteAccount: 'Delete Account',
 
 }
